@@ -1,0 +1,51 @@
+ion-header { 
+    
+    .encabezado{ 
+        position:absolute; 
+           
+        
+    }
+    .avatarcentro {
+        display: flex;
+        justify-content:center;
+    } 
+    
+    ion-button ion-icon{
+        font-size: 25px;
+        color: #C87F64;
+        
+    }
+    .lineaicon{
+        color: #FFFFFF !important; 
+        font-size: 25px;
+        margin-right: 300px;
+    }
+
+
+
+    ion-avatar{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+ion-header,ion-grid {
+    margin-bottom: -70px;
+}
+img {
+    width: 100%;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .encabezado {        
+        height:75%;
+        --background-image: url('/assets/img/Header.png') no-repeat 100% 100% ;
+    }
+}
+
+
+
+

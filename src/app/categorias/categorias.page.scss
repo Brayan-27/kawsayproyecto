@@ -1,0 +1,52 @@
+ion-grid { 
+    
+    margin-top: 80px;
+    
+
+    ion-label {
+        
+        //font: normal normal normal 14px/20px Roboto;
+        font-family: 'Roboto', sans-serif;
+        font-size:14px;        
+        color: #C87F64;
+    }
+    ion-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    ion-col{
+        text-align:center;
+    }
+}
+ion-icon{
+    
+    width: 29px;
+    height: 29px;
+    position: fixed;
+	left: 90%;
+	transform: translate3d(-50%, -50%, 0);
+    margin-top: 15%;	
+	opacity: 1;
+    color: ivory;
+}
+
+
+ion-content {
+    --background:#c87f641a;
+      
+}
+.icon-alineacion{
+    margin-top: -48px;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px; 
+}
+
+
+
+
+
+
+
+
+

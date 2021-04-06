@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-grid>    
+    <ion-row>
+   <ion-col class="ion-text-end">
+    <ion-button color="brown" fill="clear" (click)="salirSinArgumentos()">
+      <ion-icon name="close-circle-outline"></ion-icon> 
+    </ion-button> 
+    
+   </ion-col>
+ </ion-row>
+</ion-grid> 
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-icon class="icon-buscar" name="options-sharp"></ion-icon>
+        <ion-searchbar placeholder="Busca por nombre">
+        </ion-searchbar>
+       
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col>
+        <h2>Más personas</h2>
+      </ion-col>
+    </ion-row>      
+    <ion-row >
+      <ion-col class="ion-text-center" size="6" *ngFor="let avatar of avatars; let i=index">
+        <ion-card [ngClass]="{'custom-class-name2':i%2==0,'custom-class-name':i%2==1}">
+          <ion-card-header>
+            <ion-card-subtitle>{{avatar.categoria}} </ion-card-subtitle>          
+          </ion-card-header>        
+          <ion-card-content>
+            <ion-avatar>
+              <img [src]="avatar.img">
+            </ion-avatar>
+          </ion-card-content> 
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="brownblack">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>  
+  </ion-fab>
+
+</ion-content>

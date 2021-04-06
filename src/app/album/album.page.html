@@ -1,0 +1,21 @@
+<app-headercentraldos 
+nombre="Rudy Chavez" 
+avatar="assets/img/activo-3.png"
+></app-headercentraldos>
+
+<ion-content>
+  <ion-grid >
+    <ion-row>
+      <ion-col> 
+        <h2 >La Familia Unida</h2>
+      </ion-col> 
+    </ion-row> 
+    <ion-row >
+      <ion-col size="3" *ngFor="let album of albunes">
+        <img [src]="album.img">
+      </ion-col>      
+    </ion-row>
+  
+  </ion-grid>
+
+</ion-content>
